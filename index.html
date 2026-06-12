@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relkin016 | Личный портал</title>
+    <style>
+        :root {
+            --bg-color: #121212;
+            --card-bg: #1e1e1e;
+            --card-hover: #2a2a2a;
+            --text-main: #e0e0e0;
+            --text-muted: #a0a0a0;
+            --accent: #4caf50; /* Зеленый терминальный акцент */
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 600px;
+            width: 100%;
+            padding: 40px 20px;
+            box-sizing: border-box;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .avatar {
+            width: 100px;
+            height: 100px;
+            background-color: var(--card-bg);
+            border: 2px solid var(--accent);
+            border-radius: 50%;
+            margin: 0 auto 15px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+        }
+
+        h1 {
+            margin: 0 0 10px 0;
+            font-size: 24px;
+            letter-spacing: 1px;
+        }
+
+        .subtitle {
+            margin: 0;
+            color: var(--text-muted);
+            font-size: 14px;
+        }
+
+        .links-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .link-card {
+            background-color: var(--card-bg);
+            border: 1px solid #333;
+            border-radius: 8px;
+            padding: 15px 20px;
+            text-decoration: none;
+            color: var(--text-main);
+            display: flex;
+            align-items: center;
+            transition: all 0.2s ease-in-out;
+        }
+
+        .link-card:hover {
+            background-color: var(--card-hover);
+            transform: translateY(-2px);
+            border-color: var(--accent);
+            box-shadow: 0 4px 12px rgba(76, 175, 80, 0.1);
+        }
+
+        .icon {
+            font-size: 24px;
+            margin-right: 15px;
+            min-width: 30px;
+            text-align: center;
+        }
+
+        .card-content {
+            flex-grow: 1;
+        }
+
+        .card-title {
+            margin: 0 0 5px 0;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .card-desc {
+            margin: 0;
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+
+        footer {
+            margin-top: 50px;
+            text-align: center;
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="avatar">👨‍💻</div>
+        <h1>Relkin016</h1>
+        <p class="subtitle">System Administration | Hardware | DevOps</p>
+    </header>
+
+    <main class="links-grid">
+
+        <!-- YouTube -->
+        <a href="https://www.youtube.com/Relkin016" class="link-card" target="_blank">
+            <div class="icon">▶️</div>
+            <div class="card-content">
+                <h2 class="card-title">YouTube — Relkin016</h2>
+                <p class="card-desc">Системное администрирование, обзоры железа и DIY-гайды</p>
+            </div>
+        </a>
+
+        <!-- GitHub -->
+        <a href="https://github.com/relkin016/" class="link-card" target="_blank">
+            <div class="icon">🐙</div>
+            <div class="card-content">
+                <h2 class="card-title">GitHub</h2>
+                <p class="card-desc">Скрипты автоматизации (Bash, Python), конфигурации KVM/Ansible</p>
+            </div>
+        </a>
+
+        <!-- Ремонт ПК (Резюме) -->
+        <a href="https://relkin016.github.io/pcmaster/" class="link-card">
+            <div class="icon">🛠️</div>
+            <div class="card-content">
+                <h2 class="card-title">Ремонт и обслуживание ПК</h2>
+                <p class="card-desc">Услуги ремонта и обслуживания ПК/ноутбуков г. Киев</p>
+            </div>
+        </a>
+
+        <!-- Программы и репаки -->
+        <a href="https://relkin016.github.io/progs/" class="link-card">
+            <div class="icon">📦</div>
+            <div class="card-content">
+                <h2 class="card-title">Софт и Репаки</h2>
+                <p class="card-desc">Личный архив программ, open-source утилиты и проверенные сборки</p>
+            </div>
+        </a>
+
+        <!-- OLX -->
+        <a href="https://www.olx.ua/uk/list/user/mPhlb/" class="link-card" target="_blank">
+            <div class="icon">🏷️</div>
+            <div class="card-content">
+                <h2 class="card-title">Профиль на OLX</h2>
+                <p class="card-desc">Актуальные объявления: комплектующие, техника</p>
+            </div>
+        </a>
+
+    </main>
+
+    <footer>
+        &copy; 2026 Relkin016. All systems operational.
+    </footer>
+</div>
+
+</body>
+</html>
